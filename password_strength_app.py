@@ -3,9 +3,8 @@ import re
 import math
 import time
 
-# -------------------------------
 # Password Entropy Calculation
-# -------------------------------
+
 def calculate_entropy(password):
     charset = 0
 
@@ -24,9 +23,8 @@ def calculate_entropy(password):
     return round(len(password) * math.log2(charset), 2)
 
 
-# -------------------------------
 # Time to Crack Estimation
-# -------------------------------
+
 def time_to_crack(entropy):
     guesses_per_second = 1e9  # typical GPU rig ~1 billion guesses/s
     seconds = 2 ** entropy / guesses_per_second
@@ -47,9 +45,9 @@ def time_to_crack(entropy):
         return f"{years:.2f} years"
 
 
-# -------------------------------
+
 # Pattern Detection
-# -------------------------------
+
 def detect_patterns(password):
     patterns = []
 
@@ -74,9 +72,9 @@ def detect_patterns(password):
     return patterns if patterns else ["No obvious patterns detected"]
 
 
-# -------------------------------
+
 # Strength Label
-# -------------------------------
+
 def strength_label(entropy):
     if entropy < 28:
         return "Very Weak", "🔴"
@@ -90,9 +88,8 @@ def strength_label(entropy):
         return "Excellent", "🔵"
 
 
-# -------------------------------
 # Streamlit UI
-# -------------------------------
+
 st.set_page_config(
     page_title="Password Strength Visualizer",
     page_icon="🔐",
