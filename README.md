@@ -1,13 +1,13 @@
 # Password Strength Visualizer
 
-An interactive web application that analyzes password strength by calculating entropy, estimating crack time, and detecting common weak patterns. Perfect for cybersecurity education and awareness.
+An interactive web application that analyzes password strength by calculating entropy, estimating crack time, and detecting common weak patterns.
 
 ## Features
 
 - **Entropy Calculation**: Measures password randomness in bits
 - **Crack Time Estimation**: Estimates how long it would take to crack your password
 - **Pattern Detection**: Identifies common weak patterns (repeated chars, sequences, dictionary words)
-- **Visual Feedback**: Color-coded strength indicators and progress bars
+- **Visual Feedback**: Color-coded strength indicators
 - **Privacy-First**: Passwords are never stored or transmitted
 
 ## Quick Start
