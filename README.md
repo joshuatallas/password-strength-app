@@ -1,6 +1,6 @@
 # Password Strength Visualizer
 
-An interactive web application that analyzes password strength by calculating entropy, estimating crack time, and detecting common weak patterns.
+This application is built with Streamlit, a Python framework for creating interactive web apps. It provides real-time password strength and entropy feedback using a simple interface. The project is designed for cybersecurity education and demonstrations. It analyzes password strength by calculating entropy, estimating crack time, and detecting common weak patterns.
 
 ## Features
 
